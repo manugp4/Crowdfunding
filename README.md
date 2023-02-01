@@ -1,1 +1,1 @@
-# Crowdfunding crypto project
+# Crowdfunding smart contract
