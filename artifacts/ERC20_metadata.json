@@ -11,31 +11,6 @@
 					{
 						"indexed": true,
 						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "Approval",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
 						"name": "from",
 						"type": "address"
 					},
@@ -59,55 +34,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					}
-				],
-				"name": "allowance",
-				"outputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "spender",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "approve",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
 						"type": "address"
 					}
 				],
@@ -123,13 +50,65 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "totalSupply",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "amount",
 						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -202,7 +181,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"IERC20.sol": "IERC20"
+			"IERC20.sol": "ERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -217,11 +196,11 @@
 	},
 	"sources": {
 		"IERC20.sol": {
-			"keccak256": "0xd5951954baf0deeb1d90e4f0cdb92ef07671a24b2b82e2bc17ba5268283d0f92",
+			"keccak256": "0xd760a5d9c5eae1b5dd4060542c7c2ab1ae17a698a404b43aec13b6e4ee4e8a6c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://55e2217d069f89e534a1e0b417f61ad1baa32cd6c1239cad2c79d98fd0552b49",
-				"dweb:/ipfs/QmcNkME8cuiHKMDeGHH2ZUYA7mNdeGGxTbVdKN3zSE8BgM"
+				"bzz-raw://49a0f2d14d5437d2dfe9566aa963e94a86a14885ad9a371442439cc369f6d477",
+				"dweb:/ipfs/Qmb8Pgub96K3yTrfSSXNTrqUz7Co5ss7xfFbXr4TndkHeR"
 			]
 		}
 	},
