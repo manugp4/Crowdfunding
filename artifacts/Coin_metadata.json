@@ -6,16 +6,21 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "address",
 						"name": "from",
 						"type": "address"
 					},
 					{
-						"indexed": true,
+						"indexed": false,
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
@@ -23,11 +28,11 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
-						"name": "value",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "Transfer",
+				"name": "Sent",
 				"type": "event"
 			},
 			{
@@ -38,7 +43,7 @@
 						"type": "address"
 					}
 				],
-				"name": "balanceOf",
+				"name": "balance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -52,31 +57,10 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "burn",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "decimals",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
 					{
 						"internalType": "uint256",
 						"name": "amount",
@@ -90,25 +74,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "name",
+				"name": "minter",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "symbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -118,7 +89,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "recipient",
+						"name": "receiver",
 						"type": "address"
 					},
 					{
@@ -127,43 +98,8 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "recipient",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transferFrom",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
+				"name": "send",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -181,7 +117,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"IERC20.sol": "ERC20"
+			"Test.sol": "Coin"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -195,12 +131,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"IERC20.sol": {
-			"keccak256": "0xbaea4fb31346d4d9640ebf469efc3e5babd12f485b505c88b10b0e24bdece755",
-			"license": "MIT",
+		"Test.sol": {
+			"keccak256": "0x7b5f46903a1b255319944bb54f3dea5f7bd1a8c3987f7dbbd7c09c6768663e5e",
 			"urls": [
-				"bzz-raw://d77dda42ec653b808a3a9fb5f274a05d6493e20381eeb48112fa4f60c5567531",
-				"dweb:/ipfs/QmXgYwEt27NzLW5a635HzyZjC7UCiaC9fVQZAeJFkp9sXQ"
+				"bzz-raw://e4f0d46ba586fae7dfa230acad02ef7af8711c99fb318c27e562b473b608eccc",
+				"dweb:/ipfs/QmYCmfcBK6wkQS4TdQ55tRp4Zxg7eYBTDdc4sizdNAmtSN"
 			]
 		}
 	},

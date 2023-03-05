@@ -279,6 +279,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "timeLeft",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "token",
 				"outputs": [
@@ -320,19 +339,19 @@
 	},
 	"sources": {
 		"Crowdfunding_final.sol": {
-			"keccak256": "0x99a4cb5453bd42b16e98f62cd33081b388accf4818ee4b56eb37c4bd0ae16805",
+			"keccak256": "0x478fd198f09c148d5dce3ca514f2f840b396a203a618e4c993c4b93cac2a2941",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6ba1e3f6c5eb47ea6158048d0b6d861fc0128805dad504cd3a948453f9d77e17",
-				"dweb:/ipfs/QmVFiUfuo74gKd3ymgaMHFGPSkKGA1f5ch4W28342KhbvZ"
+				"bzz-raw://551ea8d88e98a76496a8f2e8b4a2392bf0a773769464076eae997f9e6f304fc5",
+				"dweb:/ipfs/QmWw4K4zRbxY8Bd8CCyKN2aksnuAmMVGJ7BpMjWQ6LV2zi"
 			]
 		},
 		"IERC20.sol": {
-			"keccak256": "0xd760a5d9c5eae1b5dd4060542c7c2ab1ae17a698a404b43aec13b6e4ee4e8a6c",
+			"keccak256": "0xbaea4fb31346d4d9640ebf469efc3e5babd12f485b505c88b10b0e24bdece755",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://49a0f2d14d5437d2dfe9566aa963e94a86a14885ad9a371442439cc369f6d477",
-				"dweb:/ipfs/Qmb8Pgub96K3yTrfSSXNTrqUz7Co5ss7xfFbXr4TndkHeR"
+				"bzz-raw://d77dda42ec653b808a3a9fb5f274a05d6493e20381eeb48112fa4f60c5567531",
+				"dweb:/ipfs/QmXgYwEt27NzLW5a635HzyZjC7UCiaC9fVQZAeJFkp9sXQ"
 			]
 		}
 	},
